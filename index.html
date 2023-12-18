@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>crud basico </title>
+    <link rel="stylesheet" href="stilo.css">
+</head>
+
+<body>
+    <h1>Selección de Asignaturas</h1>
+    <form id="subject-form">
+        <label for="matricula">Matrícula:</label>
+        <input type="text" id="matricula" required>
+
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" required>
+
+        <label for="asignatura">Asignatura:</label>
+
+        <select id="asignatura" multiple>
+            <option value="matematicas">Matemáticas</option>
+            <option value="historia">Historia</option>
+            <option value="ciencias">Letras</option>
+            <option value="ciencias">Programacion</option>
+            <option value="ciencias">Ingles</option>
+            <option value="ciencias">Biologia</option>
+            <option value="ciencias">Sociedad</option>
+            <option value="ciencias">Bases de datos</option>
+            <option value="ciencias">Redes</option>
+            <option value="ciencias">Administracion</option>
+
+        </select>
+
+        <button type="submit">Guardar Selección</button>
+    </form>
+
+    <div id="search-section">
+        <h2>Buscar Asignaturas por Matrícula</h2>
+        <label for="search-matricula">Matrícula:</label>
+        <input type="text" id="search-matricula" required>
+        <button id="search-button">Buscar</button>
+        <div id="search-result"></div>
+    </div>
+    <script src="app.js"></script>
+
+</body>
+
+</html>
